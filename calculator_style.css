@@ -1,0 +1,100 @@
+    body {
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    .calculator {
+      width: 400px;
+      margin: 50px auto;
+      margin-top: 120px;
+      padding: 20px;
+      border-radius: 15px;
+      background-color: #000000;
+      text-align: center;
+    }
+    .calculator h1 {
+      color: #ffffff;
+      text-transform: uppercase;
+    }
+    .calculator input {
+      width: 90%;
+      height: 80px;
+      font-size: 70px;
+      text-align: right;
+      margin: 30px 0;
+      border: none;
+      border-radius: 5px;
+      padding-right: 10px;
+      background-color: rgb(255, 255, 255);
+      color: #000000;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 80px);
+      grid-gap: 10px;
+      justify-content: center;
+    }
+    .calculator button {
+      width: 80px;
+      height: 80px;
+      font-size: 30px;
+      border: none;
+      border-radius: 50px;
+      background-color: #2f2f2f;
+      color: #ffffff;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .calculator button:hover {
+      background-color: hsla(0, 0%, 100%, 0.518);
+    }
+    button.division,
+    button.multiplication,
+    button.subtraction,
+    button.addition,
+    button.equal {
+      background-color: #ff8839;
+    }
+
+    button.division:hover,
+    button.multiplication:hover,
+    button.subtraction:hover,
+    button.addition:hover,
+    button.equal:hover {
+      background-color: #fdc198de;
+    }
+
+    button.equal {
+      width: 170px;
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+    button.clear {
+      background-color: #f23f3f;
+    }
+    button.clear:hover {
+      background-color: #f7c5c5;
+    }
+    button.delete:hover {
+      background-color: #f23f3f;
+    }
+
+    @media (max-width: 450px) {
+      .calculator {
+        width: 80%;
+      }
+      .calculator input {
+        font-size: 50px;
+      }
+      .buttons {
+        grid-template-columns: repeat(4, 70px);
+      }
+      .calculator button {
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+      }
+      button.equal {
+        width: 150px;
+        font-size: 30px;
+      }
+    }
