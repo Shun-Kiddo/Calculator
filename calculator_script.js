@@ -29,3 +29,7 @@
         backspace();
       }
     });
+
+  console.log("%cThank you for checking the console!\n%cProject by Jayson Mancol © 2025", 
+    "color: green; font-weight: bold; font-size: 16px;", 
+    "color: gray; font-size: 12px;");
